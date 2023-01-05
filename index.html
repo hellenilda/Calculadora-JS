@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora em html">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+    
+    <style>
+        body{
+            background-color: rgb(208, 206, 233);
+        }
+
+        h1, p{
+            font-family: Verdana, sans-serif;
+            color: #214f7a;
+        }
+
+        #resultado{
+            font-size: 35px;
+            line-height: 120px; /*centraliza o texto na telinha*/
+            color: #14314d;
+        }
+
+        #desenvolvedora{
+            font-size: 35px;
+            height: 55px;
+            width: 80px;
+            /*border: none;*/
+        }
+
+        .estruturaCalculadora{
+            background-color: #67a5df;
+            width: 400px;
+            height: 600px;
+        }
+
+        #detalhe{
+            font-size: 28px;
+            color: #214f7a;
+        }
+
+        #telaCalculadora{
+            background-color: white;
+            width: 330px;
+            height: 120px;
+        }
+
+        button{
+            width: 75px;
+            height: 75px;
+            font-size: 40px;
+            color: #214f7a;
+        }
+
+    </style>
+
+    <title>Calculadora GHJ</title>
+</head>
+<body>
+    <div class="calculadoraInterface">
+        <center>
+            <h1>Calculadora</h1>
+            <br>
+            <div class="estruturaCalculadora">
+                <div>
+                    <h1 id="detalhe"> --------- </h1>
+                </div>
+                
+                <div id="telaCalculadora">
+                    <p id="resultado"></p>
+                </div>
+
+                <br><br>
+                <button onclick="soma()">+</button>
+                <button onclick="subtracao()">-</button>
+                <br><br>
+                <button onclick="multiplicacao()">*</button>
+                <button onclick="divisao()">/</button>
+            </div>
+            <br><br>
+            <button id="desenvolvedora" onclick="desenvolvedora()">Dev</button>
+        </center>
+    </div>
+</body>
+</html>
